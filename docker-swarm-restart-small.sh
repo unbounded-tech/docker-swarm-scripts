@@ -2,7 +2,7 @@
 
 # Create nodes
 for i in 1 2; do
-  docker-machine create -d virtualbox node-$i
+  docker-machine start node-$i
 done
 
 echo ">> The swarm cluster is up and running"
